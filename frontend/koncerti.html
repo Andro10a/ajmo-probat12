@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="hr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Koncerti</title>
+    <link rel="stylesheet" href="koncerti.css">
+</head>
+<body>
+    <h1>Koncerti</h1>
+    <div id="notifikacija" class="skriveno"></div>
+    <div id="lista-koncerata"></div>
+    <h2>Dodaj / Uredi koncert</h2>
+    <form id="forma-dodaj-koncert">
+        <input type="text" id="naziv" placeholder="Naziv koncerta" required>
+        <input type="number" step="0.01" id="cijena" placeholder="Cijena karte (€)" required>
+        <input type="number" id="broj_karata" placeholder="Broj karata" required>
+        <input type="date" id="datum" required>
+        <input type="time" id="vrijeme" required step="60">
+        <input type="text" id="mjesto" placeholder="Mjesto" required>
+        <button type="submit">Spremi</button>
+    </form>
+    <script src="koncerti.js"></script>
+</body>
+</html>
